@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript 코드의 작성 위치</title>
+  <script>
+    // 여기에 내용을 작성하고 주석처리를 동일하게 하면 
+    // 1. 첫 번째 위치로 head 태그 내에 script 태그를 생성하며, 태그 안에 작성 가능
+    document.write('자바스크립트 head 태그에 위치<br>');
+  </script>
+  <script src="./01_js_location.js"></script>
+</head>
+<body>
+  <!-- 여기에 내용을 작성하고 Ctrl + / 를 하면 주석처리가 됩니다. -->
+   <script>
+    // 2. body 태그 내에 script 태그를 생성하여 js 코드 작성
+    document.write('자바스크립트 body 태그에 위치<br>');
+    // 3. 01_js_location.js 파일 생성
+   </script>
+   <script src="./01_js_location.js"></script>
+</body>
+</html>
