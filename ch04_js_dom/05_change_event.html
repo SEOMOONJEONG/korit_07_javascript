@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onChange event</title>
+</head>
+<body bgcolor="5f5f5f">
+  <select id="select1" onchange="doChange();">
+    <!-- option[value]*3 + Tab버튼 -->
+    <option value="KO">Korea</option>
+    <option value="CH">China</option>
+    <option value="JP">Japan</option>
+  </select>
+    <br>
+  <script>
+    function doChange() {
+      let selectedValue = document.getElementById('select1').value;
+      // value는 option에 딸려있는 속성에 해당합니다.
+      console.log(selectedValue);
+    }
+
+  </script>
+</body>
+</html>

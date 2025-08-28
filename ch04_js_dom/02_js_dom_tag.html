@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태그명을 통한 HTML element</title>
+</head>
+<body>
+  <p>HTML 요소에 대한 접근</p>
+  <p>
+    태그명을 사용하여 HTML element를 추출합니다. <br>
+    document.getElementsByTagName('p');
+  </p>
+  <p class="para">
+    여기는 클래스명을 통한 HTML요소를 찾겠습니다. <br>
+    document.getElementsByClassName('para');
+  </p>
+  <p class="para">
+    하나 더 넣겠습니다.
+  </p>
+  <b class="para">이건 다른 태그의 동일한 클래스명입니다.</b>
+  <p class="para">
+    CSS 선택자를 이용하여 HTML element를 추출합니다. <br>
+    document.querySelectorAll('p.para');
+  </p>
+  <script>
+    let elements = document.getElementsByTagName('p');
+    console.log(elements);
+
+    let classElems = document.getElementsByClassName('para');
+    console.log(classElems);
+
+    let selectorResult = document.querySelectorAll('p.para');
+    console.log(selectorResult);
+    // 최근에는 querySelector로 HTML element 추출을 좀 더 많이 하는 것 같습니다.
+  </script>
+</body>
+</html>
