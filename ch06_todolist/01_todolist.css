@@ -96,11 +96,12 @@ h1 {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
+/* js 42번 라인 */
 .todo-item.completed {
   background-color: #e8eaed;
 }
 
+/* li 태그의 background 컬러 말고, 그 자식인 span태그 부분에 속성 추가 */
 .todo-item.completed .todo-text {
   text-decoration: line-through;
   color: var(--completed-color);
