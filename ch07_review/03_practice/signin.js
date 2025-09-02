@@ -13,18 +13,18 @@
         return;
       }
 
-      let isSuccess = false; // 로그인 성공 여부 플래그
+      let loginSuccess = false; // 로그인 성공 여부 플래그
 
       addUsers.forEach(user => {
-        if(user.text1 === loginId && user.text2 === loginPw) {
-          isSuccess = true;
+        if(user.id === loginId && user.pw === loginPw) {
+          loginSuccess = true;
         }
       });
       
-      if(isSuccess) {
-        alert('로그인 성공! 🎉');
-      } else {
-        alert('로그인 실패! ❌');
+      if(loginSuccess) {
+        alert('로그인 성공 ! 😁');
+      } else { 
+        alert('로그인 실패 ! 😢');
       }
     }
 
